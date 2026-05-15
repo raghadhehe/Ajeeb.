@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Ajeeb Store's toy gallery - LEGO, Barbie, RC Cars, Arts and Crafts and more. Click any image to view full size." />
+  <title>Gallery - Ajeeb Store | Toy Photos from Bahrain</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/block.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+       <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Ajeeb Store Home">
+        <span class="logo-icon"><img src="images/icon ajeeb.png" alt="ajeeb logo"></span>
+      </a>
+
+      <!-- Hamburger button shown on mobile -->
+      <button class="nav-toggle" id="navToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Main navigation -->
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html"   class="nav-btn">Home</a></li>
+          <li><a href="shop.html"    class="nav-btn">Shop</a></li>
+          <li><a href="about.html"   class="nav-btn">About</a></li>
+          <li><a href="gallery.html" class="nav-btn active" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- PAGE HERO with background image -->
+    <section class="page-hero gallery-hero" aria-label="Gallery page banner">
+      <!-- Gradient overlay on top of the background image -->
+      <div class="page-hero-bg"></div>
+      <div class="container">
+        <h1>Toy Gallery</h1>
+        <p>Click any image to view it full size. Discover the joy inside every box.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading" class="section-title">Product Showcase</h2>
+        <p class="section-sub">A selection of our most popular toys from our Bahrain store.</p>
+
+        <!-- Each button calls openLightbox() with its index number -->
+        <div class="gallery-grid" id="galleryGrid" role="list">
+
+          <!-- Image 1 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(0)"
+                    aria-label="View LEGO City Police Station full size">
+              <!-- reflect-img adds CSS3 reflect effect -->
+              <img src="images/lego1.avif"
+                   alt="LEGO City Police Station 668 pieces set for ages 6 and up"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>LEGO City Police Station</figcaption>
+          </figure>
+
+          <!-- Image 2 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(1)"
+                    aria-label="View Barbie Dreamhouse full size">
+              <img src="images/dream house.jpg"
+                   alt="Barbie Dreamhouse fully furnished multi storey dollhouse for ages 3 and up"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>Barbie Dreamhouse</figcaption>
+          </figure>
+
+          <!-- Image 3 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(2)"
+                    aria-label="View RC Cobra Snake toy full size">
+              <img src="images/rc.webp"
+                   alt="RC Cobra Snake toy with infrared and sensor control for ages 5 and up"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>RC Cobra Snake - Sensor Control</figcaption>
+          </figure>
+
+          <!-- Image 4 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(3)"
+                    aria-label="View Glow in the Dark Potion Kit full size">
+              <img src="images/glow in dark.jpg"
+                   alt="Magic World Glow in the Dark Potion Kit 12 bottles kids experiment game"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>Glow-in-the-Dark Potion Kit</figcaption>
+          </figure>
+
+          <!-- Image 5 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(4)"
+                    aria-label="View 16 Inch Kids Bicycle full size">
+              <img src="images/kids bicycle.jpg"
+                   alt="16 Inch Kids Bicycle with basket and training wheels for ages 4 to 7"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>16" Kids Bicycle</figcaption>
+          </figure>
+
+          <!-- Image 6 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(5)"
+                    aria-label="View Kids Mini Camera full size">
+              <img src="images/baby cam.jpg"
+                   alt="Kids Digital Mini Camera with Instant Print chicken design"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>Kids Mini Camera - Instant Print</figcaption>
+          </figure>
+
+          <!-- Image 7 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(6)"
+                    aria-label="View Gabby's Dollhouse Playset full size">
+              <img src="images/gabbys.avif"
+                   alt="Gabby's Dollhouse surprise filled playset with figures and accessories"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>Gabby's Dollhouse Playset</figcaption>
+          </figure>
+
+          <!-- Image 8 -->
+          <figure class="gallery-item" role="listitem">
+            <button class="gallery-thumb-btn"
+                    onclick="openLightbox(7)"
+                    aria-label="View Royal Baby Bicycle full size">
+              <img src="images/royal baby.jpg"
+                   alt="Royal Baby Bicycle yellow Mini Rider with training wheels ages 2 to 4"
+                   class="gallery-thumb reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <div class="gallery-overlay" aria-hidden="true"><span>🔍</span></div>
+            </button>
+            <figcaption>Royal Baby Bicycle</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX - hidden by default, opened by JS when thumbnail is clicked -->
+    <div id="lightbox" class="lightbox" role="dialog"
+         aria-modal="true"
+         aria-label="Image lightbox"
+         aria-hidden="true">
+
+      <!-- Clicking the dark backdrop closes the lightbox -->
+      <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+
+      <div class="lightbox-content">
+        <!-- Close button -->
+        <button class="lightbox-close"
+                onclick="closeLightbox()"
+                aria-label="Close lightbox">X</button>
+
+        <!-- Previous image -->
+        <button class="lightbox-prev"
+                onclick="changeLightbox(-1)"
+                aria-label="Previous image">&lsaquo;</button>
+
+        <!-- Full size image and caption -->
+        <div class="lightbox-img-wrap">
+          <img id="lightbox-img" src="" alt="" class="lightbox-image" />
+          <p id="lightbox-caption" class="lightbox-caption"></p>
+        </div>
+
+        <!-- Next image -->
+        <button class="lightbox-next"
+                onclick="changeLightbox(1)"
+                aria-label="Next image">&rsaquo;</button>
+
+        <!-- Counter showing current image e.g. 2 / 8 -->
+        <p class="lightbox-counter">
+          <span id="lb-current">1</span> / <span id="lb-total">8</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Cart toast shown by JS -->
+    <div id="cart-toast" class="cart-toast" role="status" aria-live="polite"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Ajeeb Store Home">
+          <span class="logo-icon"><img src="images/icon ajeeb.png" alt="Ajeeb Store logo"></span>
+        </a>
+        <p>Bahrain's favourite toy store since 1979. Over 1,500 toys, games and gifts for every child.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <address>
+          <p> Manama, Kingdom of Bahrain</p>
+          <p> <a href="mailto:hello@ajeebstore.com">hello@ajeebstore.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 Ajeeb Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

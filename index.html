@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ajeeb Store - Bahrain's favourite toy store. Shop LEGO, Barbie, RC Cars, Arts and Crafts, Outdoor toys and more. Fast delivery across Bahrain." />
+  <meta name="keywords" content="Ajeeb Store, toys Bahrain, LEGO Bahrain, Barbie, kids toys, RC cars, arts crafts, baby toys" />
+  <meta name="author" content="Raghad Dawood and Yousif">
+  <title>Ajeeb Store | Bahrain's Favourite Toy Store</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/block.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Ajeeb Store Home">
+        <span class="logo-icon"><img src="images/icon ajeeb.png" alt="ajeeb logo"></span>
+      </a>
+
+      <!-- Hamburger button shown on mobile -->
+      <button class="nav-toggle" id="navToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Main navigation -->
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html"   class="nav-btn active" aria-current="page">Home</a></li>
+          <li><a href="shop.html"    class="nav-btn">Shop</a></li>
+          <li><a href="about.html"   class="nav-btn">About</a></li>
+          <li><a href="gallery.html" class="nav-btn">Gallery</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO with full background image -->
+    <section class="hero" aria-label="Hero banner">
+
+      <!-- Gradient overlays on top of the hero background image -->
+      <div class="hero-bg-multi"></div>
+
+      <!-- Hero text and buttons -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">Bahrain's Favourite Toy Store Since 1979</p>
+
+        <h1 class="hero-title">
+          Toys That Make<br />
+          <span class="hero-accent">Every Child</span><br />
+          <!-- Animated rotating word -->
+          <span class="hero-arabic rotate-word">Ajeeb!</span>
+        </h1>
+
+        <p class="hero-sub">
+          Over 1,500 toys, games and gifts. LEGO, Barbie, RC Cars, Arts and Crafts and more.
+          Fast delivery across Bahrain and the GCC.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="shop.html"    class="btn-primary">Shop Now</a>
+          <a href="gallery.html" class="btn-secondary">View Gallery</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Scrolling marquee strip - decorative, hidden from screen readers -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span> LEGO</span>
+        <span>FREE DELIVERY OVER BHD 20</span>
+        <span> BARBIE</span>
+        <span>POKEMON</span>
+        <span> ARTS AND CRAFTS</span>
+        <span>RC CARS AND VEHICLES</span>
+        <span> BABY TOYS</span>
+        <span>BAHRAIN'S FAVOURITE SINCE 1979</span>
+        <!-- Duplicate set for seamless loop -->
+        <span> LEGO</span>
+        <span>FREE DELIVERY OVER BHD 20</span>
+        <span>BARBIE</span>
+        <span>POKEMON</span>
+        <span> ARTS AND CRAFTS</span>
+        <span>RC CARS AND VEHICLES</span>
+      </div>
+    </div>
+
+    <!-- WHY SHOP AJEEB - three column section -->
+    <section class="features-section" aria-labelledby="trust-heading">
+      <div class="container">
+        <h2 id="trust-heading" class="section-title">Why Shop Ajeeb?</h2>
+        <p class="section-sub">Trusted by Bahraini families for over 45 years.</p>
+
+        <div class="features-grid three-col">
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Fast Delivery</h3>
+            <p>Free delivery on orders over BHD 20. Same-day dispatch for orders placed before 2 PM anywhere in Bahrain.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Safe and Certified</h3>
+            <p>Every toy we stock is CE-certified and age-rated. Shop with confidence knowing your child's safety comes first.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true"></div>
+            <h3>Easy Returns</h3>
+            <p>14-day hassle-free returns on all toys. If it's not the right fit, we'll sort it no questions asked.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS - three column grid -->
+    <section class="products-section" aria-labelledby="featured-heading">
+      <div class="container">
+        <h2 id="featured-heading" class="section-title">Latest Arrivals</h2>
+        <p class="section-sub">Fresh stock just landed in our Bahrain warehouse.</p>
+
+        <div class="products-grid" id="productsGrid">
+
+          <!-- Product 1 -->
+          <article class="product-card" data-category="lego" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/tnt.jpg"
+                   alt="Minecraft Magnetic Building Blocks Set 100 pieces TNT Cube Design"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Minecraft Magnetic Blocks 100pcs</h3>
+              <p>TNT Cube design magnetic building set. Ages 6+</p>
+              <div class="product-footer">
+                <span class="price">BHD 4.600</span>
+                <button class="btn-add-cart"
+                        onclick="addToCart('Minecraft Magnetic Blocks', 4.6)"
+                        aria-label="Add Minecraft Magnetic Blocks to cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card" data-category="rc" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/rc.webp"
+                   alt="RC Cobra Snake Toy with Infrared and Sensor Control"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge">Hot</span>
+            </div>
+            <div class="product-info">
+              <h3>RC Cobra Snake - Sensor Control</h3>
+              <p>Infrared and sensor-controlled moving snake toy. Ages 5+</p>
+              <div class="product-footer">
+                <span class="price">BHD 6.600</span>
+                <button class="btn-add-cart"
+                        onclick="addToCart('RC Cobra Snake', 6.6)"
+                        aria-label="Add RC Cobra Snake to cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card" data-category="outdoor" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/kids bicycle.jpg"
+                   alt="16 Inch Kids Bicycle with Basket and Training Wheels"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>16" Kids Bicycle + Training Wheels</h3>
+              <p>Sturdy bike with basket and removable training wheels. Ages 4-7</p>
+              <div class="product-footer">
+                <span class="price">BHD 19.900</span>
+                <button class="btn-add-cart"
+                        onclick="addToCart('16 Inch Kids Bicycle', 19.9)"
+                        aria-label="Add Kids Bicycle to cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card" data-category="games" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/Football Board Game Table.jpg"
+                   alt="Football Board Game Table Set for kids"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Football Board Game Table</h3>
+              <p>Fast-paced tabletop soccer game perfect for family game night. Ages 3+</p>
+              <div class="product-footer">
+                <span class="price">BHD 2.900</span>
+                <button class="btn-add-cart"
+                        onclick="addToCart('Football Board Game Table', 2.9)"
+                        aria-label="Add Football Board Game to cart">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-cta">
+          <a href="shop.html" class="btn-primary">View All Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MULTIMEDIA - video and audio elements -->
+    <section class="media-section" aria-labelledby="media-heading">
+      <div class="container">
+        <h2 id="media-heading" class="section-title">See and Hear Ajeeb</h2>
+
+        <div class="media-grid">
+
+          <!-- HTML5 Video -->
+          <div class="media-card">
+            <h3> Toy Showcase 2025</h3>
+            <video controls
+                   width="100%"
+                   preload="metadata"
+                   aria-label="Ajeeb Store toy showcase video"
+                   poster="images/video-poster.jpg">
+              <source src="videos/Ajeeb Stores New Branch in Tubli.mp4" type="video/mp4" />
+              <source src="media/ajeeb-showcase.webm" type="video/webm" />
+              <p>Your browser does not support HTML5 video.
+                 <a href="media/ajeeb-showcase.mp4">Download the video</a>.
+              </p>
+            </video>
+          </div>
+
+          <!-- HTML5 Audio -->
+          <div class="media-card">
+            <h3> Ajeeb Store Radio Jingle</h3>
+            <p>The official Ajeeb Store jingle as heard on Bahrain radio!</p>
+            <audio controls aria-label="Ajeeb Store radio jingle">
+              <source src="audios/Children's Music  Happy Upbeat Music (Instrumental Music For Kids).mp3" type="audio/mpeg" />
+              <p>Your browser does not support HTML5 audio.
+                 <a href="audios/Children's Music  Happy Upbeat Music (Instrumental Music For Kids).mp3">Download the audio</a>.
+              </p>
+            </audio>
+            <p class="media-note"> As heard on Bahrain radio since 1979!</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS - three column -->
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading" class="section-title">What Bahraini Families Say</h2>
+
+        <div class="testimonials-grid three-col">
+
+          <blockquote class="testimonial-card">
+            <p>"My son's LEGO set arrived the same day I ordered it. Amazing service and the toy was exactly as described. Will always shop here!"</p>
+            <footer>- Fatima A., Manama</footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>"Bought a Barbie Dreamhouse for my daughter's birthday. The packaging was perfect and the price was the best I found in Bahrain."</p>
+            <footer>- Mohammed R., Riffa</footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <p>"The RC car I ordered for my nephew was a huge hit at his party. Great quality and fast delivery. Ajeeb never disappoints!"</p>
+            <footer>- Sara K., Muharraq</footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS3 COLUMN-COUNT SECTION: Three-column text layout -->
+    <section class="column-section" aria-labelledby="column-heading">
+      <div class="container">
+        <h2 id="column-heading" class="section-title">Why Every Child Deserves Ajeeb</h2>
+        <p class="section-sub">A little about what makes us different.</p>
+        <div class="prose-three-col">
+          <p>At Ajeeb Store, we believe that the right toy at the right age can spark a lifelong passion. That's why every product on our shelves is hand-picked by our team of child development enthusiasts who understand the power of play. From LEGO sets that teach spatial reasoning to arts and crafts kits that build fine motor skills, each toy in our collection has been chosen with purpose.</p>
+          <p>We've been serving Bahraini families since 1979 — over four decades of birthdays, Eids, and everyday surprises. Generations of children have grown up with Ajeeb toys in their hands, and many of those children now bring their own kids to shop with us. That cycle of trust and joy is the most meaningful thing we've built.</p>
+          <p>Our Manama store stocks over 1,500 unique products, and our online shop delivers across Bahrain within 1–3 business days. Whether you're after the latest LEGO City set, a classic Barbie Dreamhouse, or a safe sensory toy for a newborn, Ajeeb has you covered. Shop with confidence — every item is CE-certified, age-appropriate, and backed by our 14-day return guarantee.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER with JS form validation -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <h2 id="newsletter-heading">Get Exclusive Toy Deals 🎁</h2>
+        <p>Subscribe for early access to new toy arrivals, seasonal sales and Bahrain-exclusive offers.</p>
+
+        <form class="newsletter-form"
+              onsubmit="handleNewsletter(event)"
+              novalidate
+              aria-label="Newsletter signup form">
+
+          <div class="form-group">
+            <label for="nl-name">Your Name</label>
+            <input type="text" id="nl-name" name="name"
+                   placeholder="Your name"
+                   autocomplete="given-name" />
+          </div>
+
+          <div class="form-group">
+            <label for="nl-email">Email Address</label>
+            <input type="email" id="nl-email" name="email"
+                   placeholder="you@example.com"
+                   required
+                   autocomplete="email" />
+          </div>
+
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+
+        <!-- JS writes success or error message here -->
+        <div id="newsletter-msg" role="alert" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Cart toast - shown by addToCart() JS function -->
+    <div id="cart-toast" class="cart-toast" role="status" aria-live="polite"></div>
+
+    <!-- Secret offer popup - hidden by default, revealed by JS -->
+    <div id="secret-offer" class="secret-offer" style="display:none;" aria-hidden="true">
+      <div class="secret-inner">
+        <button class="secret-close"
+                onclick="document.getElementById('secret-offer').style.display='none'"
+                aria-label="Close offer">
+          X
+        </button>
+        <h3>🎉 Secret Deal!</h3>
+        <p>Use code <strong>AJEEB20</strong> for 20% off your next toy order. Valid 24hrs only!</p>
+        <a href="shop.html" class="btn-primary">Shop Now</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+
+      <!-- Brand and description -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Ajeeb Store Home">
+          <span class="logo-icon"><img src="images/icon ajeeb.png" alt="Ajeeb Store logo"></span>
+        </a>
+        <p>Bahrain's favourite toy store since 1979. Over 1,500 toys, games and gifts for every child.</p>
+      </div>
+
+      <!-- Page links -->
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact details -->
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <address>
+          <p> Manama, Kingdom of Bahrain</p>
+          <p><a href="mailto:hello@ajeebstore.com">hello@ajeebstore.com</a></p>
+          <p><a href="tel:+97317000000">+973 1700 0000</a></p>
+          <p> Sat-Thu: 9 AM - 9 PM | Fri: 2 PM - 9 PM</p>
+        </address>
+      </div>
+
+    </div>
+
+    <!-- Copyright bar with hidden secret offer link -->
+    <div class="footer-bottom">
+      <p>2026 Ajeeb Store. All rights reserved. |
+        <a href="#" onclick="showSecretOffer(event)">Psst... 🤫</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

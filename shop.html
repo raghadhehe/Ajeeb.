@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop over 1,500 toys at Ajeeb Store Bahrain. Filter by category - LEGO, Barbie, RC Cars, Arts and Crafts, Baby, Outdoor and more." />
+  <title>Shop - Ajeeb Store | Toys and Gifts in Bahrain</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/block.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content for keyboard users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+ <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Ajeeb Store Home">
+        <span class="logo-icon"><img src="images/icon ajeeb.png" alt="ajeeb logo"></span>
+      </a>
+
+      <!-- Hamburger button shown on mobile -->
+      <button class="nav-toggle" id="navToggle"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Main navigation -->
+      <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html"   class="nav-btn">Home</a></li>
+          <li><a href="shop.html"    class="nav-btn active" aria-current="page">Shop</a></li>
+          <li><a href="about.html"   class="nav-btn">About</a></li>
+          <li><a href="gallery.html" class="nav-btn">Gallery</a></li>
+          <li><a href="contact.html" class="nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- PAGE HERO with background image -->
+    <section class="page-hero shop-hero" aria-label="Shop page banner">
+      <!-- Gradient overlay on top of the background image -->
+      <div class="page-hero-bg"></div>
+      <div class="container">
+        <h1>Our Toy Shop</h1>
+        <p>Over 1,500 toys for every age - find your child's next favourite.</p>
+      </div>
+    </section>
+
+    <!-- FILTER BUTTONS - JS filters products by category -->
+    <section class="filter-section" aria-label="Product category filters">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter toys by category">
+          <button class="filter-btn active" data-filter="all"     onclick="filterProducts('all', this)">All Toys</button>
+          <button class="filter-btn"        data-filter="lego"    onclick="filterProducts('lego', this)">LEGO and Puzzle</button>
+          <button class="filter-btn"        data-filter="dolls"   onclick="filterProducts('dolls', this)">Dolls</button>
+          <button class="filter-btn"        data-filter="rc"      onclick="filterProducts('rc', this)">RC Cars</button>
+          <button class="filter-btn"        data-filter="arts"    onclick="filterProducts('arts', this)">Arts and Crafts</button>
+          <button class="filter-btn"        data-filter="outdoor" onclick="filterProducts('outdoor', this)">Outdoor</button>
+          <button class="filter-btn"        data-filter="baby"    onclick="filterProducts('baby', this)">Baby</button>
+          <button class="filter-btn"        data-filter="games"   onclick="filterProducts('games', this)">Family Games</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section class="products-full-section" aria-labelledby="shop-products-heading">
+      <div class="container">
+        <!-- Hidden heading for screen readers -->
+        <h2 id="shop-products-heading" class="sr-only">All Products</h2>
+
+        <div class="products-grid" id="productsGrid">
+
+          <!-- LEGO -->
+          <article class="product-card" data-category="lego" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/tnt.jpg"
+                   alt="Minecraft Magnetic Building Blocks Set 100 pieces"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Minecraft Magnetic Blocks - 100pcs</h3>
+              <p>TNT Cube design magnetic building set. Ages 6+</p>
+              <div class="product-footer">
+                <span class="price">BHD 4.600</span>
+                <button class="btn-add-cart" onclick="addToCart('Minecraft Magnetic Blocks', 4.6)" aria-label="Add Minecraft Magnetic Blocks to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="lego" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/lego1.avif"
+                   alt="LEGO City Police Station 668 pieces for ages 6 and up"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge">Popular</span>
+            </div>
+            <div class="product-info">
+              <h3>LEGO City Police Station</h3>
+              <p>668 pieces. Build the full police station with vehicles. Ages 6+</p>
+              <div class="product-footer">
+                <span class="price">BHD 24.900</span>
+                <button class="btn-add-cart" onclick="addToCart('LEGO City Police Station', 24.9)" aria-label="Add LEGO City Police Station to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dolls -->
+          <article class="product-card" data-category="dolls" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/dream house.jpg"
+                   alt="Barbie Dreamhouse fully furnished dollhouse"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Barbie Dreamhouse</h3>
+              <p>Fully furnished multi-storey Barbie Dreamhouse. Ages 3+</p>
+              <div class="product-footer">
+                <span class="price">BHD 22.000</span>
+                <button class="btn-add-cart" onclick="addToCart('Barbie Dreamhouse', 22)" aria-label="Add Barbie Dreamhouse to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="dolls" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/gabbys.avif"
+                   alt="Gabby's Dollhouse playset with figures and accessories"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Gabby's Dollhouse Playset</h3>
+              <p>Surprise-filled dollhouse with figures and accessories. Ages 3+</p>
+              <div class="product-footer">
+                <span class="price">BHD 15.500</span>
+                <button class="btn-add-cart" onclick="addToCart('Gabbys Dollhouse Playset', 15.5)" aria-label="Add Gabby's Dollhouse to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- RC Cars -->
+          <article class="product-card" data-category="rc" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/rc.webp"
+                   alt="RC Cobra Snake Toy with Infrared Sensor Control"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge">Hot</span>
+            </div>
+            <div class="product-info">
+              <h3>RC Cobra Snake - Sensor Control</h3>
+              <p>Infrared and sensor-controlled interactive snake toy. Ages 5+</p>
+              <div class="product-footer">
+                <span class="price">BHD 6.600</span>
+                <button class="btn-add-cart" onclick="addToCart('RC Cobra Snake', 6.6)" aria-label="Add RC Cobra Snake to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="rc" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/walkie.avif"
+                   alt="Kids Video Walkie Talkie Set interactive communication toy"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Kids Video Walkie Talkie Set</h3>
+              <p>Interactive communication toy with screen. 2-piece set. Ages 4+</p>
+              <div class="product-footer">
+                <span class="price">BHD 9.900</span>
+                <button class="btn-add-cart" onclick="addToCart('Kids Video Walkie Talkie Set', 9.9)" aria-label="Add Video Walkie Talkie Set to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Arts and Crafts -->
+          <article class="product-card" data-category="arts" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/glow in dark.jpg"
+                   alt="Magic World Glow in the Dark Potion Kit 12 bottles kids experiment"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Glow-in-the-Dark Potion Kit</h3>
+              <p>12-bottle magic potion experiment game. Glow in the dark fun. Ages 6+</p>
+              <div class="product-footer">
+                <span class="price">BHD 3.550</span>
+                <button class="btn-add-cart" onclick="addToCart('Glow in the Dark Potion Kit', 3.55)" aria-label="Add Potion Kit to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="arts" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/super art.jpg"
+                   alt="Super Art Craft Kit for kids ages 3 and up"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Super Art Craft Kit</h3>
+              <p>Complete art set with paints, brushes, stickers and more. Ages 3+</p>
+              <div class="product-footer">
+                <span class="price">BHD 7.500</span>
+                <button class="btn-add-cart" onclick="addToCart('Super Art Craft Kit', 7.5)" aria-label="Add Super Art Craft Kit to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Outdoor -->
+          <article class="product-card" data-category="outdoor" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/kids bicycle.jpg"
+                   alt="16 Inch Kids Bicycle with Basket and Training Wheels"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>16" Kids Bicycle + Training Wheels</h3>
+              <p>Sturdy kids bike with basket and removable training wheels. Ages 4-7</p>
+              <div class="product-footer">
+                <span class="price">BHD 19.900</span>
+                <button class="btn-add-cart" onclick="addToCart('16 Inch Kids Bicycle', 19.9)" aria-label="Add 16 Inch Bicycle to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="outdoor" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/royal baby.jpg"
+                   alt="Royal Baby Bicycle with Training Wheels Yellow Royal Mini Rider"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge">Popular</span>
+            </div>
+            <div class="product-info">
+              <h3>Royal Baby Bicycle - Mini Rider</h3>
+              <p>Yellow Royal Mini Rider with training wheels. Ages 2-4</p>
+              <div class="product-footer">
+                <span class="price">BHD 39.000</span>
+                <button class="btn-add-cart" onclick="addToCart('Royal Baby Bicycle', 39)" aria-label="Add Royal Baby Bicycle to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Baby -->
+          <article class="product-card" data-category="baby" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/babytoys.webp"
+                   alt="Baby sensory toy set soft textures for infants 0 to 2 years"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Baby Sensory Toy Set</h3>
+              <p>Soft-texture sensory toys to stimulate development. Ages 0-2</p>
+              <div class="product-footer">
+                <span class="price">BHD 8.900</span>
+                <button class="btn-add-cart" onclick="addToCart('Baby Sensory Toy Set', 8.9)" aria-label="Add Baby Sensory Toy Set to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="baby" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/baby cam.jpg"
+                   alt="Kids Digital Mini Camera with Instant Print Chicken Design"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+              <span class="product-badge new-badge">New</span>
+            </div>
+            <div class="product-info">
+              <h3>Kids Mini Camera - Instant Print</h3>
+              <p>Digital camera with instant print. Chicken design. Ages 3+</p>
+              <div class="product-footer">
+                <span class="price">BHD 10.400</span>
+                <button class="btn-add-cart" onclick="addToCart('Kids Mini Camera Instant Print', 10.4)" aria-label="Add Kids Mini Camera to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Games -->
+          <article class="product-card" data-category="games" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/Football Board Game Table.jpg"
+                   alt="Football Board Game Table Set for kids fast paced soccer game"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Football Board Game Table</h3>
+              <p>Fast-paced tabletop soccer game. Perfect for family game night. Ages 3+</p>
+              <div class="product-footer">
+                <span class="price">BHD 2.900</span>
+                <button class="btn-add-cart" onclick="addToCart('Football Board Game Table', 2.9)" aria-label="Add Football Board Game to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="games" tabindex="0">
+            <div class="product-img-wrap">
+              <img src="images/Lammah – Arabic Family Game.jpg"
+                   alt="Lammah Tale Arabic board game for families"
+                   class="product-img reflect-img"
+                   loading="lazy"
+                   onerror="this.src='images/placeholder.jpg'" />
+            </div>
+            <div class="product-info">
+              <h3>Lammah - Arabic Family Game</h3>
+              <p>An engaging Arabic-language family board game. Ages 6+</p>
+              <div class="product-footer">
+                <span class="price">BHD 3.300</span>
+                <button class="btn-add-cart" onclick="addToCart('Lammah Arabic Family Game', 3.3)" aria-label="Add Lammah Game to cart">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No results message - hidden by default, JS shows it when no products match -->
+        <div id="no-results-msg" style="display:none; text-align:center; padding:48px 0;" role="status" aria-live="polite">
+          <p style="font-size:48px; margin-bottom:16px;">🔍</p>
+          <p>No products in that category right now. Try another filter!</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cart toast shown by JS -->
+    <div id="cart-toast" class="cart-toast" role="status" aria-live="polite"></div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Ajeeb Store Home">
+          <span class="logo-icon"><img src="images/icon ajeeb.png" alt="Ajeeb Store logo"></span>
+        </a>
+        <p>Bahrain's favourite toy store since 1979. Over 1,500 toys, games and gifts for every child.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <address>
+          <p> Manama, Kingdom of Bahrain</p>
+          <p> <a href="mailto:hello@ajeebstore.com">hello@ajeebstore.com</a></p>
+          <p> <a href="tel:+97317000000">+973 1700 0000</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2026 Ajeeb Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
